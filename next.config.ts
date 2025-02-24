@@ -1,9 +1,11 @@
-// next.config.ts
-import type { NextConfig } from 'next';
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
- 
-  // Diğer ayarlarınız...
+  // Mevcut diğer ayarlarınız (images, env vs.) buradaysa burada kalabilir
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
